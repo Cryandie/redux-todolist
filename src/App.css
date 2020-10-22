@@ -1,38 +1,129 @@
+html {
+  background: linear-gradient(
+    to left,
+    rgba(82, 85, 79, 0.842),
+    rgb(220, 228, 179),
+    rgb(122, 68, 158)
+  );
+}
 .App {
   text-align: center;
+  margin-top: 35px;
+  background: linear-gradient(
+    to left,
+    rgba(82, 85, 79, 0.842),
+    rgb(220, 228, 179),
+    rgb(116, 71, 146)
+  );
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.todo-app {
+  margin-top: 30px;
+  margin-bottom: 5rem;
+  font-weight: 900;
+  font-family: cursive;
+  font-size: 60px;
+  color: rgb(218, 64, 94);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.first-div {
+  display: flex;
+  justify-content: space-around;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.fa-calendar-check {
+  margin-top: 5rem;
+  color: rgb(231, 112, 112);
+}
+.first-cont {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 25px;
+}
+.main-title {
+  color: rgb(231, 112, 112);
+}
+
+.task-container {
+  background: linear-gradient(
+    to left,
+    rgba(82, 85, 79, 0.842),
+    rgb(220, 228, 179),
+    rgb(203, 167, 228)
+  );
+  -webkit-text-fill-color: rgb(134, 114, 179);
+  border-style: ridge;
+  border-color: rgb(228, 180, 235);
+  border-width: 1rem;
+  border-radius: 20px;
+  width: 70%;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.task-content {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.desc {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 25px;
+  width: 65%;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 7rem;
+  font-family: cursive;
+  font-size: 28px;
+}
+.form-control {
+  width: 65% !important;
+  background: linear-gradient(
+    to left,
+    rgba(82, 85, 79, 0.842),
+    rgb(220, 228, 179),
+    rgba(229, 235, 210, 0.438)
+  );
+}
+.desc-cont {
+  display: flex;
+  align-items: center;
+}
+.selection {
+  margin-right: 15px;
+  background-color: rgb(229, 255, 0);
+  font-size: 18px;
+  border: 1px solid #aaa;
+  box-shadow: 0 1px 0 1px rgba(0, 0, 0, 0.04);
+  border-radius: 0.5em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.task-title-cont {
+  margin-left: 10px;
+  width: 25px;
+  font-style: italic;
+  text-decoration: underline;
+}
+.m-2 {
+  display: flex;
+  justify-content: center;
+}
+.input-container {
+  display: flex;
+  margin-left: 3.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.edit-button {
+  margin-right: 5px;
+}
+
+.empty-todos {
+  color: darkorchid;
+  border-style: dotted;
+}
+.clear-all {
+  margin-right: 15px;
 }
