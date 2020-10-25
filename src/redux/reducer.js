@@ -1,4 +1,11 @@
-import { ADD_TODO, DELETE_TODO, UPDATE_TODO, REMOVE_TODOS } from "./actions";
+import {
+  ADD_TODO,
+  DELETE_TODO,
+  UPDATE_TODO,
+  REMOVE_TODOS,
+  SHOW_COMPLETED,
+  SHOW_ACTIVE,
+} from "./actions";
 import { todos } from "./states";
 
 export let reducer = (state = todos, action) => {
@@ -18,6 +25,26 @@ export let reducer = (state = todos, action) => {
       newTodos = [...[]];
 
       return newTodos;
+
+    case SHOW_COMPLETED:
+      newTodos = [...state];
+      if (todos.completed !== true) {
+        return (
+          newTodos.completed, newTodos.filter((newTodos) => newTodos.completed)
+        );
+      } else {
+        break;
+      }
+
+    case SHOW_ACTIVE:
+      newTodos = [...state];
+      if (todos.completed !== false) {
+        return (
+          newTodos.completed, newTodos.filter((newTodos) => !newTodos.completed)
+        );
+      } else {
+        break;
+      }
 
     case UPDATE_TODO:
       newTodos = [...state];

@@ -1,6 +1,7 @@
 import React from 'react';
 import Task from './Task';
 import { useSelector } from 'react-redux';
+import FilterTask from './FilterTask';
 
 function TodoList() {
     let todos = useSelector(state => state) 
@@ -13,7 +14,7 @@ function TodoList() {
         <div className='first-cont'>
             
             <h3 className='main-title'> <strong> TodoList </strong> </h3>
-           
+            <FilterTask />
             {weHaveTodos}
             <div className="bot-icons">
                 
