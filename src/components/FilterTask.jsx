@@ -10,7 +10,7 @@ import  {useDispatch} from 'react-redux';
             <select className='selection'>
                 <option> Select filter </option> 
                 <option onClick={()=> {dispatch(showCompleted({...todos,completed:todos.completed}))}}>Done </option> 
-                <option onClick={()=> {dispatch(showInprogress({...todos,completed:todos.completed}))}}>In progress</option>
+                <option onClick={()=> {dispatch(showInprogress({...todos,completed:!todos.completed}))}}>In progress</option>
             </select>
         </div>
     )
