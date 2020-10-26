@@ -1,10 +1,11 @@
-import React from 'react';
+import React  from 'react';
 import { showCompleted, showInprogress, } from '../redux/actions';
 import  {useDispatch} from 'react-redux';
 
 
      const FilterTask = (todos) => {
         let dispatch = useDispatch();
+
     return (
         <div className='filter-task'>
             <select className='selection'>
