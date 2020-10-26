@@ -28,19 +28,11 @@ export let reducer = (state = todos, action) => {
 
     case SHOW_COMPLETED:
       newTodos = [...state];
-      if (newTodos.completed !== true) {
-        return newTodos.filter((newTodos) => newTodos.completed);
-      } else {
-        break;
-      }
+      return newTodos.filter((todos) => todos.completed);
 
     case SHOW_ACTIVE:
       newTodos = [...state];
-      if (newTodos.completed !== false) {
-        return newTodos.filter((newTodos) => !newTodos.completed);
-      } else {
-        break;
-      }
+      return newTodos.filter((todos) => !todos.completed);
 
     case UPDATE_TODO:
       newTodos = [...state];
