@@ -6,10 +6,11 @@ import FilterTask from './FilterTask';
 function TodoList() {
     let todos = useSelector(state => state) 
     let weHaveTodos = todos.length ? ( todos.map(todo => {
+        // let weHaveTodos = todos.length ? ( todos.completed===!initialState.completed?todos.filter((t) => t.completed):todos.filter((t) => !t.completed).map(todo => {
         return <Task key ={todo.id} todo={todo} />           
     }
      
-    )  ) : (<h2 className="empty-todos"> No Todo's left ! You're temporarily free !!!</h2>)
+    ) )  : (<h2 className="empty-todos"> No Todo's left ! You're temporarily free !!!</h2>)
     return (
         <div className='first-cont'>
             

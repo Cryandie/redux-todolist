@@ -4,6 +4,7 @@ export const UPDATE_TODO = "UPDATE_TODO";
 export const REMOVE_TODOS = "REMOVE_TODOS";
 export const SHOW_COMPLETED = "SHOW_COMPLETED";
 export const SHOW_ACTIVE = "SHOW_ACTIVE";
+// export const SHOW_ALL = "SHOW_ALL";
 
 export function addTodo(todos) {
   return {
@@ -32,6 +33,12 @@ export function updateTodo(todos) {
     payload: todos,
   };
 }
+// export function showAll(todos) {
+//   return {
+//     type: SHOW_ALL,
+//     payload: todos,
+//   };
+// }
 export function showCompleted(todos) {
   return {
     type: SHOW_COMPLETED,

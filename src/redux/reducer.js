@@ -5,6 +5,7 @@ import {
   REMOVE_TODOS,
   SHOW_COMPLETED,
   SHOW_ACTIVE,
+  // SHOW_ALL,
 } from "./actions";
 import { todos } from "./states";
 
@@ -25,6 +26,10 @@ export let reducer = (state = todos, action) => {
       newTodos = [...[]];
 
       return newTodos;
+
+    // case SHOW_ALL:
+    //   newTodos = [...state];
+    //   return newTodos;
 
     case SHOW_COMPLETED:
       newTodos = [...state];
